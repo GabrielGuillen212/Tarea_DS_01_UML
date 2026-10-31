@@ -1,8 +1,9 @@
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Administrador extends Usuario {
 
-    protected static ArrayList<Aerolinea> aerolineas;
+    protected static ArrayList<aerolinea> aerolineas;
     protected static ArrayList<Provedores> provedores;
     protected static ArrayList<PoliticaCancelacion> politicasCancelacion;
     protected static Itinerario itinerario;
@@ -12,7 +13,7 @@ public class Administrador extends Usuario {
         
     }
 
-    public void gestionarItinerario(Vuelo vuelo, Date fecha) {
+    public void gestionarItinerario(vuelo vuelo, Date fecha) {
         
     }
 

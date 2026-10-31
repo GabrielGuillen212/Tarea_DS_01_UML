@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Administrador extends Usuario {
 
     protected static ArrayList<Aerolinea> aerolineas;

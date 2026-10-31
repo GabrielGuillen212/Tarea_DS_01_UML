@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Date;
+
 public class Pasajero extends Usuario {
     protected ArrayList<Reserva> reservas;
     protected ArrayList<Reserva> reservasConfirmadas;

@@ -1,11 +1,14 @@
+import java.util.ArrayList;
+
 public class AgenteSoporte extends Usuario {
 
-    protected static ArrayList<Incidente> incidentes;
+    protected ArrayList<Incidente> incidentes;
     protected AgenteSoporte escalado;
 
-    public AgenteSoporte(String nombre, String correo, String id) {
+    public AgenteSoporte(String nombre, String correo, String id, AgenteSoporte escalado) {
         super(nombre, correo, id);
         this.incidentes = new ArrayList<>();
+        this.escalado = escalado;
     }
 
     public void gestionarIncidente(Incidente incidente, String estado) {

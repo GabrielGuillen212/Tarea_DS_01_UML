@@ -1,0 +1,32 @@
+public class Administrador extends Usuario {
+
+    protected static ArrayList<Aerolinea> aerolineas;
+    protected static ArrayList<Provedores> provedores;
+    protected static ArrayList<PoliticaCancelacion> politicasCancelacion;
+    protected static Itinerario itinerario;
+
+    public Administrador(String nombre, String correo, String id) {
+        super(nombre, correo, id);
+        
+    }
+
+    public void gestionarItinerario(Vuelo vuelo, Date fecha) {
+        
+    }
+
+    public void gestionarReembolsos(Reembolso reembolso, boolean estado) {
+        reembolso.setEstado(estado);
+    }
+
+    public void gestionarPoliticasCancelacion(PoliticaCancelacion politica, String descripcion) {
+        politica.setDescripcion(descripcion);       
+    }
+
+    public void gestionarProvedores(Provedores provedor) {
+        provedores.add(provedor);
+    }
+
+    public void gestionarAerolineas(Aerolinea aerolinea) {
+        aerolineas.add(aerolinea);
+    }
+}

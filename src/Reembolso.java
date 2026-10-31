@@ -1,10 +1,10 @@
 public class Reembolso {
 
     protected String idReembolso;
-    protected String estado;
+    protected boolean estado;
     protected String descripcion;
 
-    public Reembolso(String descripcion, String estado, String idReembolso) {
+    public Reembolso(String descripcion, boolean estado, String idReembolso) {
         this.descripcion = descripcion;
         this.estado = estado;
         this.idReembolso = idReembolso;
@@ -14,7 +14,7 @@ public class Reembolso {
         return idReembolso;
     }
 
-    public String getEstado() {
+    public boolean getEstado() {
         return estado;
     }
 
@@ -26,7 +26,7 @@ public class Reembolso {
         this.idReembolso = idReembolso;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(boolean estado) {
         this.estado = estado;
     }
 

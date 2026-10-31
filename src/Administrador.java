@@ -14,7 +14,7 @@ public class Administrador extends Usuario {
     }
 
     public void gestionarItinerario(vuelo vuelo, Date fecha) {
-        
+        Itinerario.cambiarHorario(vuelo, fecha);
     }
 
     public void gestionarReembolsos(Reembolso reembolso, boolean estado) {
@@ -29,7 +29,7 @@ public class Administrador extends Usuario {
         provedores.add(provedor);
     }
 
-    public void gestionarAerolineas(Aerolinea aerolinea) {
+    public void gestionarAerolineas(aerolinea aerolinea) {
         aerolineas.add(aerolinea);
     }
 }

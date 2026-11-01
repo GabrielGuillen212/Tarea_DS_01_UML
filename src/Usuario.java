@@ -32,4 +32,11 @@ public class Usuario {
     public void setId(String id) {
         this.id = id;
     }
+
+    public Incidente reportarIncidente(String titulo, String descripcion, AgenteSoporte soporte) {
+        
+        Incidente incidente = new Incidente(descripcion, soporte, this);
+
+        return incidente;
+    }
 }

@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Pasajero extends Usuario {
     protected ArrayList<Reserva> reservas;
@@ -19,7 +18,7 @@ public class Pasajero extends Usuario {
         return reservasConfirmadas;
     }
 
-    public void reservarVuelo(Vuelo vuelo){
+    public void reservarVuelo(vuelo vuelo){
         Reserva reserva = new Reserva(vuelo);
         reservas.add(reserva);
     }
@@ -42,12 +41,5 @@ public class Pasajero extends Usuario {
                 break;
             }
         }
-    }
-
-    public Incidente reportarIncidente(String titulo, String descripcion){
-        
-        Incidente incidente = new Incidente(titulo, descripcion);
-
-        return incidente;
     }
 }

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public class vuelo {
+public class Vuelo {
     
     protected String id;
     protected Date horario;
@@ -10,7 +10,7 @@ public class vuelo {
     protected ArrayList<Pasajero> pasajeros;
     protected aerolinea aerolinea;
 
-    public vuelo(String id, Date horario, String destino, aerolinea aerolinea) {
+    public Vuelo(String id, Date horario, String destino, aerolinea aerolinea) {
         this.id = id;
         this.horario = horario;
         this.destino = destino;

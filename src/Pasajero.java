@@ -18,7 +18,7 @@ public class Pasajero extends Usuario {
         return reservasConfirmadas;
     }
 
-    public void reservarVuelo(vuelo vuelo){
+    public void reservarVuelo(Vuelo vuelo){
         Reserva reserva = new Reserva(vuelo);
         reservas.add(reserva);
     }

@@ -3,7 +3,7 @@ import java.util.Date;
 
 public class aerolinea {
     
-    protected ArrayList<vuelo> vuelos;
+    protected ArrayList<Vuelo> vuelos;
     protected String nombre;
 
     public aerolinea(String nombre) {
@@ -19,19 +19,19 @@ public class aerolinea {
         this.nombre = nombre;
     }
 
-    public void agregarVuelos(vuelo vuelo) {
+    public void agregarVuelos(Vuelo vuelo) {
         if (vuelo != null) {
             this.vuelos.add(vuelo);
         }
     }
 
-    public void eliminarVuelos(vuelo vuelo) {
+    public void eliminarVuelos(Vuelo vuelo) {
         if (vuelo != null) {
             this.vuelos.remove(vuelo);
         }
     }
 
-    public void reprogramarVuelo(vuelo vuelo, Date fecha) {
+    public void reprogramarVuelo(Vuelo vuelo, Date fecha) {
         if (vuelo != null && this.vuelos.contains(vuelo)) {
             vuelo.setHorario(fecha);
         }

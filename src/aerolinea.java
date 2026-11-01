@@ -3,10 +3,20 @@ import java.util.Date;
 
 public class aerolinea {
     
-    public ArrayList<vuelo> vuelos;
+    protected ArrayList<vuelo> vuelos;
+    protected String nombre;
 
-    public aerolinea() {
+    public aerolinea(String nombre) {
+        this.nombre = nombre;
         this.vuelos = new ArrayList<>();
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public void agregarVuelos(vuelo vuelo) {

@@ -1,20 +1,18 @@
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Administrador extends Usuario {
 
     protected static ArrayList<aerolinea> aerolineas;
     protected static ArrayList<Provedores> provedores;
     protected static ArrayList<PoliticaCancelacion> politicasCancelacion;
-    protected static Itinerario itinerario;
 
     public Administrador(String nombre, String correo, String id) {
         super(nombre, correo, id);
         
     }
 
-    public void gestionarItinerario(vuelo vuelo, Date fecha) {
-        Itinerario.cambiarHorario(vuelo, fecha);
+    public void gestionarItinerario() {
+        System.out.println("Gestionando itinerario...");
     }
 
     public void gestionarReembolsos(Reembolso reembolso, boolean estado) {
@@ -25,11 +23,11 @@ public class Administrador extends Usuario {
         politica.setDescripcion(descripcion);       
     }
 
-    public void gestionarProvedores(Provedores provedor) {
+    public void agregarProvedores(Provedores provedor) {
         provedores.add(provedor);
     }
 
-    public void gestionarAerolineas(aerolinea aerolinea) {
+    public void agregarAerolineas(aerolinea aerolinea) {
         aerolineas.add(aerolinea);
     }
 }

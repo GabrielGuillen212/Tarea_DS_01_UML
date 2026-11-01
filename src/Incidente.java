@@ -2,16 +2,16 @@ public class Incidente {
 
     protected String idIncidente;
     protected String descripcion;
-    protected AgenteSoporte gestionador;
+    protected IResolutor gestionador; //Cambiao a IResolutor, aplicacion DIP, EAZM
     protected Usuario reportador;
     protected String estado;
     protected static int cont = 0; //se agrego para poder crear los ID
 
-    public Incidente(String descripcion, AgenteSoporte gestionador, Usuario reportador) {
+    public Incidente(String descripcion, IResolutor gestionador, Usuario reportador) {
         this.descripcion = descripcion;
         this.gestionador = gestionador;
         this.reportador = reportador;
-        this.estado = "Pendiente";
+        this.estado = "Abierto"; //cambio de estado inicial a "Abierto", EAZM
         setIdIncidente();
     }
 
@@ -23,7 +23,7 @@ public class Incidente {
         return descripcion;
     }
 
-    public AgenteSoporte getGestionador() {
+    public IResolutor getGestionador() {
         return gestionador;
     }
 
@@ -44,7 +44,7 @@ public class Incidente {
         this.descripcion = descripcion;
     }
 
-    public void setGestionador(AgenteSoporte gestionador) {
+    public void setGestionador(IResolutor gestionador) {
         this.gestionador = gestionador;
     }
 

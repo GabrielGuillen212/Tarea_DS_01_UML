@@ -3,10 +3,10 @@ import java.util.Date;
 
 public class Itinerario {
 
-    public static  ArrayList<vuelo> vuelos = new ArrayList<>();
+    public static  ArrayList<Vuelo> vuelos = new ArrayList<>();
 
-    public static void cambiarHorario(vuelo vuelo, Date fecha) {
-        for (vuelo v : vuelos) {
+    public static void cambiarHorario(Vuelo vuelo, Date fecha) {
+        for (Vuelo v : vuelos) {
             if (v.equals(vuelo)) {
                 v.setHorario(fecha);
                 break;
@@ -14,11 +14,11 @@ public class Itinerario {
         }
     }
 
-    public static void agregarVuelo(vuelo vuelo) {
+    public static void agregarVuelo(Vuelo vuelo) {
         vuelos.add(vuelo);
     }
 
-    public static void eliminarVuelo(vuelo vuelo) {
+    public static void eliminarVuelo(Vuelo vuelo) {
         vuelos.remove(vuelo);
     }
 
@@ -26,7 +26,7 @@ public class Itinerario {
         vuelos.clear();
     }
 
-    public static ArrayList<vuelo> getVuelos() {
+    public static ArrayList<Vuelo> getVuelos() {
         return vuelos;
     }
 }

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Pasajero extends Usuario {
     protected ArrayList<Reserva> reservas;
@@ -18,9 +19,12 @@ public class Pasajero extends Usuario {
         return reservasConfirmadas;
     }
 
-    public void reservarVuelo(vuelo vuelo){
-        Reserva reserva = new Reserva(vuelo);
-        reservas.add(reserva);
+    public void reservarVuelo(Vuelo vuelo) {
+    // 'this' hace referencia al Pasajero que está ejecutando la reserva
+    Date fechaVuelo = (vuelo != null) ? vuelo.getHorario() : new Date();
+    Reserva reserva = new Reserva(vuelo, null, fechaVuelo, this);
+    
+    reservas.add(reserva);
     }
 
     public void reservarVehiculo(Reserva reserva, Vehiculo vehiculo){

@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class Administrador extends Usuario {
 
-    protected static ArrayList<aerolinea> aerolineas;
-    protected static ArrayList<Provedores> provedores;
+    protected static ArrayList<Aerolinea> aerolineas;
+    protected static ArrayList<ProvedorVehiculos> provedores;
     protected static ArrayList<PoliticaCancelacion> politicasCancelacion;
 
     public Administrador(String nombre, String correo, String id) {
@@ -23,11 +23,11 @@ public class Administrador extends Usuario {
         politica.setDescripcion(descripcion);       
     }
 
-    public void agregarProvedores(Provedores provedor) {
+    public void agregarProvedores(ProvedorVehiculos provedor) {
         provedores.add(provedor);
     }
 
-    public void agregarAerolineas(aerolinea aerolinea) {
+    public void agregarAerolineas(Aerolinea aerolinea) {
         aerolineas.add(aerolinea);
     }
 }

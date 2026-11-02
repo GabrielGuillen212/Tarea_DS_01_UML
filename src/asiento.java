@@ -1,8 +1,8 @@
-public class asiento {
+public class Asiento {
     
     protected String tipo;
 
-    public asiento(String tipo) {
+    public Asiento(String tipo) {
         this.tipo = tipo;
     }
 

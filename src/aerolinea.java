@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public class aerolinea {
+public class Aerolinea {
     
     protected ArrayList<Vuelo> vuelos;
     protected String nombre;
 
-    public aerolinea(String nombre) {
+    public Aerolinea(String nombre) {
         this.nombre = nombre;
         this.vuelos = new ArrayList<>();
     }

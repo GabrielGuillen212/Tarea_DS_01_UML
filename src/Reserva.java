@@ -5,13 +5,22 @@ public class Reserva {
     protected Vehiculo vehiculo;
     protected Date horario;
     protected Pasajero pasajero;
+    protected Asiento asiento;
+    protected boolean estado; 
 
-    // Constructor base
     public Reserva(Vuelo vuelo, Vehiculo vehiculo, Date horario, Pasajero pasajero) {
         this.vuelo = vuelo;
         this.vehiculo = vehiculo;
         this.horario = horario;
         this.pasajero = pasajero;
+    }
+    
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 
     public Vuelo getVuelo() {

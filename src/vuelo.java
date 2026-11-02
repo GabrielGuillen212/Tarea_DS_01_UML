@@ -5,12 +5,12 @@ public class Vuelo {
     
     protected String id;
     protected Date horario;
-    protected ArrayList<asiento> asientos;
+    protected ArrayList<Asiento> asientos;
     protected String destino;
     protected ArrayList<Pasajero> pasajeros;
-    protected aerolinea aerolinea;
+    protected Aerolinea aerolinea;
 
-    public Vuelo(String id, Date horario, String destino, aerolinea aerolinea) {
+    public Vuelo(String id, Date horario, String destino, Aerolinea aerolinea) {
         this.id = id;
         this.horario = horario;
         this.destino = destino;
@@ -27,11 +27,11 @@ public class Vuelo {
         return horario;
     }
 
-    public aerolinea getAerolinea() {
+    public Aerolinea getAerolinea() {
         return aerolinea;
     }
 
-    public ArrayList<asiento> getAsientos() {
+    public ArrayList<Asiento> getAsientos() {
         return asientos;
     }
 
@@ -47,7 +47,7 @@ public class Vuelo {
         this.id = id;
     }
 
-    public void setAsientos(ArrayList<asiento> asientos) {
+    public void setAsientos(ArrayList<Asiento> asientos) {
         this.asientos = asientos;
     }
 
@@ -63,7 +63,7 @@ public class Vuelo {
         this.horario = horario;
     }
 
-    public void setAerolinea(aerolinea aerolinea) {
+    public void setAerolinea(Aerolinea aerolinea) {
         this.aerolinea = aerolinea;
     }
 }

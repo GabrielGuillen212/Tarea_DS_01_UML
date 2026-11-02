@@ -1,36 +1,37 @@
+import java.util.Date;
+
 public class Vehiculo {
-    
-    protected String placa;
-    protected String marca;
-    protected String modelo;
+    protected String tipo;
+    protected Pasajero pasajero;
+    protected Date horario;
 
-    public Vehiculo(String placa, String marca, String modelo) {
-        this.placa = placa;
-        this.marca = marca;
-        this.modelo = modelo;
+    public Vehiculo(String tipo, Pasajero pasajero, Date horario) {
+        this.tipo = tipo;
+        this.pasajero = pasajero;
+        this.horario = horario;
     }
 
-    public String getPlaca() {
-        return placa;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setPlaca(String placa) {
-        this.placa = placa;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
-    public String getMarca() {
-        return marca;
+    public Pasajero getPasajero() {
+        return pasajero;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setPasajero(Pasajero pasajero) {
+        this.pasajero = pasajero;
     }
 
-    public String getModelo() {
-        return modelo;
+    public Date getHorario() {
+        return horario;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setHorario(Date horario) {
+        this.horario = horario;
     }
 }
